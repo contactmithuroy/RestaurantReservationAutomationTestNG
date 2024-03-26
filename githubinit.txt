@@ -4,15 +4,26 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/contactmithuroy/Picaboo.com-Web-Application.git
 git push -u origin main
-
+........................................................
 
 git status
 git add .
 git commit -m 'update'
 git push origin main
 
-
+..................................................
 git push origin main --force
 git push --force
+...................................................
 
 git pull --allow-unrelated-histories origin main
+
+....................................................
+** If getting fatal error like this
+error: failed to push some refs to 'https://github.com/contactmithuroy/RestaurantReservationAutomationTestNG.git'
+Use:-
+git pull --rebase
+git push
+..................................................
+git pull --rebase origin main
+git push origin main
