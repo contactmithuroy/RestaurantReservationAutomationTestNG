@@ -23,7 +23,7 @@ public class TC_002_Login extends BaseClass{
 	        utils=new Utils();
 	        utils.getUserCreds(0);
 	        
-			driver.get(url);
+	        driver.get(url);
 			loginPage.loginCreds(utils.getEmail(), utils.getPassword());
 	
 		}catch(Exception e){

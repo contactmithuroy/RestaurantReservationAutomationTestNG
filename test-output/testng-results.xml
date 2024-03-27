@@ -1,21 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-27T01:28:29 IST" name="Suite" finished-at="2024-03-27T01:28:44 IST" duration-ms="15583">
+  <suite started-at="2024-03-27T15:22:20 IST" name="Suite" finished-at="2024-03-27T15:24:19 IST" duration-ms="119228">
     <groups>
+      <group name="Logout_Account">
+        <method signature="TC_003_Logout.doLogout(java.lang.String)[pri:0, instance:testCases.TC_003_Logout@57d7f8ca]" name="doLogout" class="testCases.TC_003_Logout"/>
+      </group> <!-- Logout_Account -->
       <group name="Login_Account">
-        <method signature="TC_002_Login.doLoginWithInvalidCreds(java.lang.String)[pri:0, instance:testCases.TC_002_Login@4a7f959b]" name="doLoginWithInvalidCreds" class="testCases.TC_002_Login"/>
-        <method signature="TC_002_Login.doLoginWithValidCreds(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_002_Login@4a7f959b]" name="doLoginWithValidCreds" class="testCases.TC_002_Login"/>
+        <method signature="TC_002_Login.doLoginWithInvalidCreds(java.lang.String)[pri:0, instance:testCases.TC_002_Login@5403f35f]" name="doLoginWithInvalidCreds" class="testCases.TC_002_Login"/>
+        <method signature="TC_002_Login.doLoginWithValidCreds(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_002_Login@5403f35f]" name="doLoginWithValidCreds" class="testCases.TC_002_Login"/>
       </group> <!-- Login_Account -->
     </groups>
-    <test started-at="2024-03-27T01:28:29 IST" name="Test" finished-at="2024-03-27T01:28:44 IST" duration-ms="15583">
-      <class name="testCases.TC_002_Login">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.TC_002_Login@4a7f959b]" started-at="2024-03-27T01:28:29 IST" name="setUp" finished-at="2024-03-27T01:28:34 IST" duration-ms="4963" status="PASS">
+    <test started-at="2024-03-27T15:22:20 IST" name="Test" finished-at="2024-03-27T15:24:19 IST" duration-ms="119228">
+      <class name="testCases.TC_003_Logout">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.TC_003_Logout@57d7f8ca]" started-at="2024-03-27T15:23:35 IST" name="setUp" finished-at="2024-03-27T15:23:38 IST" duration-ms="3245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="doLoginWithInvalidCreds(java.lang.String)[pri:0, instance:testCases.TC_002_Login@4a7f959b]" started-at="2024-03-27T01:28:34 IST" name="doLoginWithInvalidCreds" description="User gives invalid credentials and login is not successful" finished-at="2024-03-27T01:28:34 IST" duration-ms="0" status="FAIL">
+        <test-method signature="doLogout(java.lang.String)[pri:0, instance:testCases.TC_003_Logout@57d7f8ca]" started-at="2024-03-27T15:23:38 IST" name="doLogout" description="User logout successfully" finished-at="2024-03-27T15:24:14 IST" duration-ms="35617" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://localhost/MiniProject/customerSide/customerLogin/login.php]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogout -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testCases.TC_003_Logout@57d7f8ca]" started-at="2024-03-27T15:24:14 IST" name="closeDriver" finished-at="2024-03-27T15:24:19 IST" duration-ms="5557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- testCases.TC_003_Logout -->
+      <class name="testCases.TC_002_Login">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.TC_002_Login@5403f35f]" started-at="2024-03-27T15:22:20 IST" name="setUp" finished-at="2024-03-27T15:22:25 IST" duration-ms="5031" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="doLoginWithInvalidCreds(java.lang.String)[pri:0, instance:testCases.TC_002_Login@5403f35f]" started-at="2024-03-27T15:22:25 IST" name="doLoginWithInvalidCreds" description="User gives invalid credentials and login is not successful" finished-at="2024-03-27T15:22:25 IST" duration-ms="0" status="FAIL">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
@@ -59,7 +83,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLoginWithInvalidCreds -->
-        <test-method signature="doLoginWithValidCreds(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_002_Login@4a7f959b]" started-at="2024-03-27T01:28:34 IST" name="doLoginWithValidCreds" description="User gives valid credentials and login is successful" finished-at="2024-03-27T01:28:39 IST" duration-ms="5193" status="PASS">
+        <test-method signature="doLoginWithValidCreds(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_002_Login@5403f35f]" started-at="2024-03-27T15:22:25 IST" name="doLoginWithValidCreds" description="User gives valid credentials and login is successful" finished-at="2024-03-27T15:23:30 IST" duration-ms="64367" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -80,7 +104,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLoginWithValidCreds -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testCases.TC_002_Login@4a7f959b]" started-at="2024-03-27T01:28:39 IST" name="closeDriver" finished-at="2024-03-27T01:28:44 IST" duration-ms="5308" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testCases.TC_002_Login@5403f35f]" started-at="2024-03-27T15:23:30 IST" name="closeDriver" finished-at="2024-03-27T15:23:35 IST" duration-ms="5321" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
