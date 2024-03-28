@@ -28,7 +28,7 @@ public class BaseClass {
 	
 	@AfterClass
     public void closeDriver() throws InterruptedException{
-		Thread.sleep(5000);
+		Thread.sleep(1000);
        driver.quit();
     }
 	

@@ -17,19 +17,19 @@ public class TC_003_Logout extends BaseClass{
 	LogoutPage logoutpage;
 	
 	@Test(groups="Logout_Account", description = "User logout successfully")
-	@Parameters({"url"})
+	@Parameters({"loginPageURL"})
 	
-	public void doLogout(String url) {
+	public void doLogout(String loginPageURL) {
 		try {
 			loginPage=new LoginPage(driver);
 			logoutpage=new LogoutPage(driver);
 	        utils=new Utils();
 	        utils.getUserCreds(0);
 	        
-	        driver.get(url);
+	        driver.get(loginPageURL);
 			loginPage.loginCreds(utils.getEmail(), utils.getPassword());
 	        
-			logoutpage.logout(url);
+			logoutpage.logout(loginPageURL);
 			
 		}catch(Exception e){
 			//Assert.fail();

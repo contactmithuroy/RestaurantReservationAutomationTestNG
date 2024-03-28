@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Mar 27 15:22:20 IST 2024</td>
+<td>Started on:</td><td>Wed Mar 27 23:08:00 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>119 seconds (119228 ms)</td>
+<tr><td>Total time:</td><td>133 seconds (133206 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,23 +75,29 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.TC_002_Login.doLoginWithInvalidCreds()'><b>doLoginWithInvalidCreds</b><br>Test class: testCases.TC_002_Login<br>Test method: User gives invalid credentials and login is not successful</td>
-<td><div><pre>org.testng.TestNGException: 
-Cannot inject @Test annotated Method [doLoginWithInvalidCreds] with [class java.lang.String].
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+<td title='testCases.TC_005_AboutUS.aboutUs()'><b>aboutUs</b><br>Test class: testCases.TC_005_AboutUS<br>Test method: Page About us section view successfully<br>Parameters: http://localhost/MiniProject/customerSide/home/home.php</td>
+<td><div><pre>java.lang.AssertionError: About us secton title is not correct expected [Sambar&apos;S  DINING &amp; BAR Company History] but found [Sambar&apos;S House DINING &amp; BAR Company History:]
+	at pageObject.AboutUsPage.aboutUs(AboutUsPage.java:27)
+	at testCases.TC_005_AboutUS.aboutUs(TC_005_AboutUS.java:21)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1392886653", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1392886653'><pre>org.testng.TestNGException: 
-Cannot inject @Test annotated Method [doLoginWithInvalidCreds] with [class java.lang.String].
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:884)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
-	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
-	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1316001196", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1316001196'><pre>java.lang.AssertionError: About us secton title is not correct expected [Sambar&apos;S  DINING &amp; BAR Company History] but found [Sambar&apos;S House DINING &amp; BAR Company History:]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at pageObject.AboutUsPage.aboutUs(AboutUsPage.java:27)
+	at testCases.TC_005_AboutUS.aboutUs(TC_005_AboutUS.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -112,26 +118,8 @@ For more information on native dependency injection please refer to https://test
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>testCases.TC_002_Login@5403f35f</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='testCases.TC_002_Login.doLoginWithValidCreds()'><b>doLoginWithValidCreds</b><br>Test class: testCases.TC_002_Login<br>Test method: User gives valid credentials and login is successful<br>Parameters: http://localhost/MiniProject/customerSide/customerLogin/login.php, jean@gmail.com, password456</td>
-<td></td>
-<td>64</td>
-<td>testCases.TC_002_Login@5403f35f</td></tr>
-<tr>
-<td title='testCases.TC_003_Logout.doLogout()'><b>doLogout</b><br>Test class: testCases.TC_003_Logout<br>Test method: User logout successfully<br>Parameters: http://localhost/MiniProject/customerSide/customerLogin/login.php</td>
-<td></td>
-<td>35</td>
-<td>testCases.TC_003_Logout@57d7f8ca</td></tr>
+<td>116</td>
+<td>testCases.TC_005_AboutUS@3d5c822d</td></tr>
 </table><p>
 </body>
 </html>

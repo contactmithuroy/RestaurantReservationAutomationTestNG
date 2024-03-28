@@ -1,0 +1,20 @@
+[
+  {
+    	"email": "user@gmail.com",
+	"member_name": "Dilquer Salman",
+	"password":  "P@ssword",
+    	"phone_number": "887289378974"
+  },
+  {
+    	"email": " user ",
+	"member_name": "Sharukh khan",
+	"password": "P@ssword",
+    	"phone_number": "98734897234" 
+ },
+  {
+    	"email": " user@gmail.com ",
+	"member_name": "Irfan Khan",
+	"password": "P@ssword",
+    	"phone_number": "ABCDEFGF"
+  }
+]

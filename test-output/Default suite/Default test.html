@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Mar 27 15:03:46 IST 2024</td>
+<td>Started on:</td><td>Wed Mar 27 18:49:30 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>9 seconds (9839 ms)</td>
+<tr><td>Total time:</td><td>9 seconds (9986 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,11 +75,12 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.TC_003_Logout.doLogout()'><b>doLogout</b><br>Test class: testCases.TC_003_Logout<br>Test method: User logout successfully</td>
+<td title='testCases.TC_004_Registration.doRegistration()'><b>doRegistration</b><br>Test class: testCases.TC_004_Registration<br>Test method: User can registration successfully</td>
 <td><div><pre>org.testng.TestNGException: 
-Method doLogout requires 3 parameters but 1 were supplied in the @Test annotation.
-	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:447)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+Parameter &apos;homePageURL&apos; is required by @Test on method doRegistration but has not been marked @Optional or defined
+in C:\Users\MITHU\AppData\Local\Temp\testng-eclipse-1081432492\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:884)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
@@ -105,11 +106,12 @@ Method doLogout requires 3 parameters but 1 were supplied in the @Test annotatio
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1720865719", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1720865719'><pre>org.testng.TestNGException: 
-Method doLogout requires 3 parameters but 1 were supplied in the @Test annotation.
-	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:447)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1388849499", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1388849499'><pre>org.testng.TestNGException: 
+Parameter &apos;homePageURL&apos; is required by @Test on method doRegistration but has not been marked @Optional or defined
+in C:\Users\MITHU\AppData\Local\Temp\testng-eclipse-1081432492\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:884)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
@@ -137,7 +139,7 @@ Method doLogout requires 3 parameters but 1 were supplied in the @Test annotatio
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>testCases.TC_003_Logout@1b1426f4</td></tr>
+<td>testCases.TC_004_Registration@76c3e77a</td></tr>
 </table><p>
 </body>
 </html>

@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">-->
-<suite name="Suite">
-  <test thread-count="5" name="Test">
-	 <parameter name="url" value="http://localhost/MiniProject/customerSide/customerLogin/login.php" />
+<suite name="Restaurant Reservation Automation TestSuite">
+  <test thread-count="5" name="Restaurant Reservation Automation Test">
+	  	<parameter name="homePageURL" value="http://localhost/MiniProject/customerSide/home/home.php" />
+	 	<parameter name="loginPageURL" value="http://localhost/MiniProject/customerSide/customerLogin/login.php" />
 		<parameter name="email" value="jean@gmail.com" />
 		<parameter name="password" value="password456" />
   	<classes>
 			<!--<class name="testCases.TC_002_Login" /> -->
-			<class name="testCases.TC_002_Login" />
-			<class name="testCases.TC_003_Logout" />
+			
+			<!-- <class name="testCases.TC_003_Logout" /> -->
+			
+			<!-- <class name="testCases.TC_004_Registration" /> -->
+			
+			<!--  <class name="testCases.TC_005_AboutUS" /> -->
+			
+			<!-- <class name="testCases.TC_006_ContactInformation" /> -->
+			
+			<class name="testCases.TC_007_Menu" /> 
 			
 		</classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test>
+</suite>

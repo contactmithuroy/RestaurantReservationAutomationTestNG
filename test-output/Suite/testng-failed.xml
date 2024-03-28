@@ -3,16 +3,17 @@
 <suite name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <parameter name="password" value="password456"/>
-    <parameter name="url" value="http://localhost/MiniProject/customerSide/customerLogin/login.php"/>
+    <parameter name="loginPageURL" value="http://localhost/MiniProject/customerSide/customerLogin/login.php"/>
+    <parameter name="homePageURL" value="http://localhost/MiniProject/customerSide/home/home.php"/>
     <parameter name="email" value="jean@gmail.com"/>
     <classes>
-      <class name="testCases.TC_002_Login">
+      <class name="testCases.TC_005_AboutUS">
         <methods>
-          <include name="doLoginWithInvalidCreds"/>
           <include name="closeDriver"/>
           <include name="setUp"/>
+          <include name="aboutUs" invocation-numbers="0"/>
         </methods>
-      </class> <!-- testCases.TC_002_Login -->
+      </class> <!-- testCases.TC_005_AboutUS -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

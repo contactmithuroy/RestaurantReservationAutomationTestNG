@@ -16,14 +16,14 @@ public class LogoutPage {
 	}
 
 	@FindBy(xpath="//button[normalize-space()='ACCOUNT']")
-	WebElement textLogout;
+	WebElement textAccount;
 	
 	@FindBy(xpath = ("//a[normalize-space()='Logout']"))
 	public WebElement btnLogout;
 	
 	public void logout(String url) throws Exception {
 		System.out.println("Logout Page Running");
-		textLogout.click();
+		textAccount.click();
 		Thread.sleep(2000);
 		btnLogout.click();
 		

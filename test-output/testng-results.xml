@@ -1,114 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-27T15:22:20 IST" name="Suite" finished-at="2024-03-27T15:24:19 IST" duration-ms="119228">
+  <suite started-at="2024-03-28T01:45:23 IST" name="Restaurant Reservation Automation TestSuite" finished-at="2024-03-28T01:46:01 IST" duration-ms="37793">
     <groups>
-      <group name="Logout_Account">
-        <method signature="TC_003_Logout.doLogout(java.lang.String)[pri:0, instance:testCases.TC_003_Logout@57d7f8ca]" name="doLogout" class="testCases.TC_003_Logout"/>
-      </group> <!-- Logout_Account -->
-      <group name="Login_Account">
-        <method signature="TC_002_Login.doLoginWithInvalidCreds(java.lang.String)[pri:0, instance:testCases.TC_002_Login@5403f35f]" name="doLoginWithInvalidCreds" class="testCases.TC_002_Login"/>
-        <method signature="TC_002_Login.doLoginWithValidCreds(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_002_Login@5403f35f]" name="doLoginWithValidCreds" class="testCases.TC_002_Login"/>
-      </group> <!-- Login_Account -->
+      <group name="Navigation_Menu">
+        <method signature="TC_007_Menu.drinksDisheCheck(java.lang.String)[pri:4, instance:testCases.TC_007_Menu@49c7b90e]" name="drinksDisheCheck" class="testCases.TC_007_Menu"/>
+        <method signature="TC_007_Menu.mainDisheCheck(java.lang.String)[pri:2, instance:testCases.TC_007_Menu@49c7b90e]" name="mainDisheCheck" class="testCases.TC_007_Menu"/>
+        <method signature="TC_007_Menu.menuCheck(java.lang.String)[pri:1, instance:testCases.TC_007_Menu@49c7b90e]" name="menuCheck" class="testCases.TC_007_Menu"/>
+        <method signature="TC_007_Menu.sideDisheCheck(java.lang.String)[pri:3, instance:testCases.TC_007_Menu@49c7b90e]" name="sideDisheCheck" class="testCases.TC_007_Menu"/>
+      </group> <!-- Navigation_Menu -->
     </groups>
-    <test started-at="2024-03-27T15:22:20 IST" name="Test" finished-at="2024-03-27T15:24:19 IST" duration-ms="119228">
-      <class name="testCases.TC_003_Logout">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.TC_003_Logout@57d7f8ca]" started-at="2024-03-27T15:23:35 IST" name="setUp" finished-at="2024-03-27T15:23:38 IST" duration-ms="3245" status="PASS">
+    <test started-at="2024-03-28T01:45:23 IST" name="Restaurant Reservation Automation Test" finished-at="2024-03-28T01:46:01 IST" duration-ms="37793">
+      <class name="testCases.TC_007_Menu">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.TC_007_Menu@49c7b90e]" started-at="2024-03-28T01:45:23 IST" name="setUp" finished-at="2024-03-28T01:45:28 IST" duration-ms="4701" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="doLogout(java.lang.String)[pri:0, instance:testCases.TC_003_Logout@57d7f8ca]" started-at="2024-03-27T15:23:38 IST" name="doLogout" description="User logout successfully" finished-at="2024-03-27T15:24:14 IST" duration-ms="35617" status="PASS">
+        <test-method signature="menuCheck(java.lang.String)[pri:1, instance:testCases.TC_007_Menu@49c7b90e]" started-at="2024-03-28T01:45:28 IST" name="menuCheck" description="Menu section page view successfully" finished-at="2024-03-28T01:45:48 IST" duration-ms="20383" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[http://localhost/MiniProject/customerSide/customerLogin/login.php]]>
+                <![CDATA[http://localhost/MiniProject/customerSide/home/home.php]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- doLogout -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testCases.TC_003_Logout@57d7f8ca]" started-at="2024-03-27T15:24:14 IST" name="closeDriver" finished-at="2024-03-27T15:24:19 IST" duration-ms="5557" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-      </class> <!-- testCases.TC_003_Logout -->
-      <class name="testCases.TC_002_Login">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.TC_002_Login@5403f35f]" started-at="2024-03-27T15:22:20 IST" name="setUp" finished-at="2024-03-27T15:22:25 IST" duration-ms="5031" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="doLoginWithInvalidCreds(java.lang.String)[pri:0, instance:testCases.TC_002_Login@5403f35f]" started-at="2024-03-27T15:22:25 IST" name="doLoginWithInvalidCreds" description="User gives invalid credentials and login is not successful" finished-at="2024-03-27T15:22:25 IST" duration-ms="0" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Cannot inject @Test annotated Method [doLoginWithInvalidCreds] with [class java.lang.String].
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Cannot inject @Test annotated Method [doLoginWithInvalidCreds] with [class java.lang.String].
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
-at org.testng.internal.Parameters.createParameters(Parameters.java:708)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:884)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doLoginWithInvalidCreds -->
-        <test-method signature="doLoginWithValidCreds(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_002_Login@5403f35f]" started-at="2024-03-27T15:22:25 IST" name="doLoginWithValidCreds" description="User gives valid credentials and login is successful" finished-at="2024-03-27T15:23:30 IST" duration-ms="64367" status="PASS">
+        </test-method> <!-- menuCheck -->
+        <test-method signature="mainDisheCheck(java.lang.String)[pri:2, instance:testCases.TC_007_Menu@49c7b90e]" started-at="2024-03-28T01:45:48 IST" name="mainDisheCheck" description="Menu dishes section MAIN DISHES view successfully" finished-at="2024-03-28T01:45:52 IST" duration-ms="3516" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[http://localhost/MiniProject/customerSide/customerLogin/login.php]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[jean@gmail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[password456]]>
+                <![CDATA[http://localhost/MiniProject/customerSide/home/home.php]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- doLoginWithValidCreds -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testCases.TC_002_Login@5403f35f]" started-at="2024-03-27T15:23:30 IST" name="closeDriver" finished-at="2024-03-27T15:23:35 IST" duration-ms="5321" status="PASS">
+        </test-method> <!-- mainDisheCheck -->
+        <test-method signature="sideDisheCheck(java.lang.String)[pri:3, instance:testCases.TC_007_Menu@49c7b90e]" started-at="2024-03-28T01:45:52 IST" name="sideDisheCheck" description="Side dises section MAIN DISHES view successfully" finished-at="2024-03-28T01:45:55 IST" duration-ms="3589" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://localhost/MiniProject/customerSide/home/home.php]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sideDisheCheck -->
+        <test-method signature="drinksDisheCheck(java.lang.String)[pri:4, instance:testCases.TC_007_Menu@49c7b90e]" started-at="2024-03-28T01:45:55 IST" name="drinksDisheCheck" description="Drink dishes section MAIN DISHES view successfully" finished-at="2024-03-28T01:45:59 IST" duration-ms="3654" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://localhost/MiniProject/customerSide/home/home.php]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- drinksDisheCheck -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testCases.TC_007_Menu@49c7b90e]" started-at="2024-03-28T01:45:59 IST" name="closeDriver" finished-at="2024-03-28T01:46:01 IST" duration-ms="1890" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-      </class> <!-- testCases.TC_002_Login -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- testCases.TC_007_Menu -->
+    </test> <!-- Restaurant Reservation Automation Test -->
+  </suite> <!-- Restaurant Reservation Automation TestSuite -->
 </testng-results>
