@@ -2,18 +2,19 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Restaurant Reservation Automation TestSuite]">
   <test thread-count="5" name="Restaurant Reservation Automation Test(failed)">
+    <parameter name="staffPageURL" value="http://localhost/MiniProject/adminSide/StaffLogin/login.php"/>
     <parameter name="password" value="password456"/>
     <parameter name="loginPageURL" value="http://localhost/MiniProject/customerSide/customerLogin/login.php"/>
     <parameter name="homePageURL" value="http://localhost/MiniProject/customerSide/home/home.php"/>
     <parameter name="email" value="jean@gmail.com"/>
     <classes>
-      <class name="testCases.TC_007_Menu">
+      <class name="testCases.TC_011_Staff_Login">
         <methods>
           <include name="closeDriver"/>
           <include name="setUp"/>
-          <include name="allMenuCheck"/>
+          <include name="staffLogin"/>
         </methods>
-      </class> <!-- testCases.TC_007_Menu -->
+      </class> <!-- testCases.TC_011_Staff_Login -->
     </classes>
   </test> <!-- Restaurant Reservation Automation Test(failed) -->
 </suite> <!-- Failed suite [Restaurant Reservation Automation TestSuite] -->

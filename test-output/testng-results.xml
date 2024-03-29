@@ -1,71 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-28T01:45:23 IST" name="Restaurant Reservation Automation TestSuite" finished-at="2024-03-28T01:46:01 IST" duration-ms="37793">
+  <suite started-at="2024-03-28T13:31:09 IST" name="Restaurant Reservation Automation TestSuite" finished-at="2024-03-28T13:31:34 IST" duration-ms="24198">
     <groups>
-      <group name="Navigation_Menu">
-        <method signature="TC_007_Menu.drinksDisheCheck(java.lang.String)[pri:4, instance:testCases.TC_007_Menu@49c7b90e]" name="drinksDisheCheck" class="testCases.TC_007_Menu"/>
-        <method signature="TC_007_Menu.mainDisheCheck(java.lang.String)[pri:2, instance:testCases.TC_007_Menu@49c7b90e]" name="mainDisheCheck" class="testCases.TC_007_Menu"/>
-        <method signature="TC_007_Menu.menuCheck(java.lang.String)[pri:1, instance:testCases.TC_007_Menu@49c7b90e]" name="menuCheck" class="testCases.TC_007_Menu"/>
-        <method signature="TC_007_Menu.sideDisheCheck(java.lang.String)[pri:3, instance:testCases.TC_007_Menu@49c7b90e]" name="sideDisheCheck" class="testCases.TC_007_Menu"/>
-      </group> <!-- Navigation_Menu -->
+      <group name="Staff Login Account">
+        <method signature="TC_011_Staff_Login.staffLogin(java.lang.String)[pri:0, instance:testCases.TC_011_Staff_Login@3d5c822d]" name="staffLogin" class="testCases.TC_011_Staff_Login"/>
+      </group> <!-- Staff Login Account -->
     </groups>
-    <test started-at="2024-03-28T01:45:23 IST" name="Restaurant Reservation Automation Test" finished-at="2024-03-28T01:46:01 IST" duration-ms="37793">
-      <class name="testCases.TC_007_Menu">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.TC_007_Menu@49c7b90e]" started-at="2024-03-28T01:45:23 IST" name="setUp" finished-at="2024-03-28T01:45:28 IST" duration-ms="4701" status="PASS">
+    <test started-at="2024-03-28T13:31:09 IST" name="Restaurant Reservation Automation Test" finished-at="2024-03-28T13:31:34 IST" duration-ms="24198">
+      <class name="testCases.TC_011_Staff_Login">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.TC_011_Staff_Login@3d5c822d]" started-at="2024-03-28T13:31:09 IST" name="setUp" finished-at="2024-03-28T13:31:12 IST" duration-ms="2424" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="menuCheck(java.lang.String)[pri:1, instance:testCases.TC_007_Menu@49c7b90e]" started-at="2024-03-28T01:45:28 IST" name="menuCheck" description="Menu section page view successfully" finished-at="2024-03-28T01:45:48 IST" duration-ms="20383" status="PASS">
+        <test-method signature="staffLogin(java.lang.String)[pri:0, instance:testCases.TC_011_Staff_Login@3d5c822d]" started-at="2024-03-28T13:31:12 IST" name="staffLogin" description="Staff gives valid credentials and login is successful" finished-at="2024-03-28T13:31:32 IST" duration-ms="20338" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[http://localhost/MiniProject/customerSide/home/home.php]]>
+                <![CDATA[http://localhost/MiniProject/adminSide/StaffLogin/login.php]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- menuCheck -->
-        <test-method signature="mainDisheCheck(java.lang.String)[pri:2, instance:testCases.TC_007_Menu@49c7b90e]" started-at="2024-03-28T01:45:48 IST" name="mainDisheCheck" description="Menu dishes section MAIN DISHES view successfully" finished-at="2024-03-28T01:45:52 IST" duration-ms="3516" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://localhost/MiniProject/customerSide/home/home.php]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mainDisheCheck -->
-        <test-method signature="sideDisheCheck(java.lang.String)[pri:3, instance:testCases.TC_007_Menu@49c7b90e]" started-at="2024-03-28T01:45:52 IST" name="sideDisheCheck" description="Side dises section MAIN DISHES view successfully" finished-at="2024-03-28T01:45:55 IST" duration-ms="3589" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://localhost/MiniProject/customerSide/home/home.php]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sideDisheCheck -->
-        <test-method signature="drinksDisheCheck(java.lang.String)[pri:4, instance:testCases.TC_007_Menu@49c7b90e]" started-at="2024-03-28T01:45:55 IST" name="drinksDisheCheck" description="Drink dishes section MAIN DISHES view successfully" finished-at="2024-03-28T01:45:59 IST" duration-ms="3654" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://localhost/MiniProject/customerSide/home/home.php]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- drinksDisheCheck -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testCases.TC_007_Menu@49c7b90e]" started-at="2024-03-28T01:45:59 IST" name="closeDriver" finished-at="2024-03-28T01:46:01 IST" duration-ms="1890" status="PASS">
+        </test-method> <!-- staffLogin -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testCases.TC_011_Staff_Login@3d5c822d]" started-at="2024-03-28T13:31:32 IST" name="closeDriver" finished-at="2024-03-28T13:31:34 IST" duration-ms="1389" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-      </class> <!-- testCases.TC_007_Menu -->
+      </class> <!-- testCases.TC_011_Staff_Login -->
     </test> <!-- Restaurant Reservation Automation Test -->
   </suite> <!-- Restaurant Reservation Automation TestSuite -->
 </testng-results>

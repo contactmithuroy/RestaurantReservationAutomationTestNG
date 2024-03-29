@@ -4,6 +4,7 @@
   <test thread-count="5" name="Restaurant Reservation Automation Test">
 	  	<parameter name="homePageURL" value="http://localhost/MiniProject/customerSide/home/home.php" />
 	 	<parameter name="loginPageURL" value="http://localhost/MiniProject/customerSide/customerLogin/login.php" />
+	 	<parameter name="staffLoginURL" value="http://localhost/MiniProject/adminSide/StaffLogin/login.php" />
 		<parameter name="email" value="jean@gmail.com" />
 		<parameter name="password" value="password456" />
   	<classes>
@@ -17,7 +18,11 @@
 			
 			<!-- <class name="testCases.TC_006_ContactInformation" /> -->
 			
-			<class name="testCases.TC_007_Menu" /> 
+			<!--<class name="testCases.TC_007_Menu" /> -->
+			
+			<!--<class name ="testCases.TC_008_Reservation_Search" />-->
+			
+			<class name="testCases.TC_011_Staff_Login" />
 			
 		</classes>
   </test>
