@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.TC_004_Registration">
+      <class name="testCases.TC_012_Bill_Details">
         <methods>
+          <include name="searchBill"/>
           <include name="closeDriver"/>
+          <include name="showAllBills"/>
           <include name="setUp"/>
-          <include name="doRegistration"/>
+          <include name="billReceiptDownload"/>
         </methods>
-      </class> <!-- testCases.TC_004_Registration -->
+      </class> <!-- testCases.TC_012_Bill_Details -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

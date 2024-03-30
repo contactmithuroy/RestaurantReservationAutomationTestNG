@@ -14,6 +14,5 @@ public class TC_011_Staff_Login extends BaseClass{
 	public void staffLogin(String staffLoginURL) throws InterruptedException {
 		staffLoginPage =  new StaffLoginPage(driver);
 		staffLoginPage.staffLogin(staffLoginURL);
-
 	}
 }
