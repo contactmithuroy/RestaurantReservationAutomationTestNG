@@ -29,7 +29,10 @@
 			<!--  <class name="testCases.TC_012_Bill_Details" /> -->
 			 
 			 <!-- <class name="testCases.TC_013_Table_Details" /> -->
-			  <class name="testCases.TC_014_Menu_Details" />
+			 
+			   <!-- <class name="testCases.TC_014_Menu_Details" /> -->
+			  
+			   <class name="testCases.TC_015_Reservation_Details" />
 			
 		</classes>
   </test>

@@ -9,13 +9,14 @@
     <parameter name="homePageURL" value="http://localhost/MiniProject/customerSide/home/home.php"/>
     <parameter name="email" value="jean@gmail.com"/>
     <classes>
-      <class name="testCases.TC_014_Menu_Details">
+      <class name="testCases.TC_015_Reservation_Details">
         <methods>
+          <include name="showAllReservation" invocation-numbers="0"/>
           <include name="closeDriver"/>
+          <include name="searchReservation" invocation-numbers="0"/>
           <include name="setUp"/>
-          <include name="addNewmenu" invocation-numbers="0"/>
         </methods>
-      </class> <!-- testCases.TC_014_Menu_Details -->
+      </class> <!-- testCases.TC_015_Reservation_Details -->
     </classes>
   </test> <!-- Restaurant Reservation Automation Test(failed) -->
 </suite> <!-- Failed suite [Restaurant Reservation Automation TestSuite] -->

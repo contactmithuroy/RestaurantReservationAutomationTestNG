@@ -3,15 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.TC_012_Bill_Details">
+      <class name="testCases.TC_015_Reservation_Details">
         <methods>
-          <include name="searchBill"/>
+          <include name="showAllReservation"/>
           <include name="closeDriver"/>
-          <include name="showAllBills"/>
+          <include name="searchReservation"/>
           <include name="setUp"/>
-          <include name="billReceiptDownload"/>
         </methods>
-      </class> <!-- testCases.TC_012_Bill_Details -->
+      </class> <!-- testCases.TC_015_Reservation_Details -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
