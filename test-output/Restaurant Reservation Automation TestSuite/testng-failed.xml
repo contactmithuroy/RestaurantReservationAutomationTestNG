@@ -14,6 +14,7 @@
           <include name="showAllReservation" invocation-numbers="0"/>
           <include name="closeDriver"/>
           <include name="searchReservation" invocation-numbers="0"/>
+          <include name="addNewReservation" invocation-numbers="0"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- testCases.TC_015_Reservation_Details -->

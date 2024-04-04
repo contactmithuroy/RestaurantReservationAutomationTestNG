@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-30T01:20:10 IST" name="Restaurant Reservation Automation TestSuite" finished-at="2024-03-30T01:20:46 IST" duration-ms="36184">
+  <suite started-at="2024-03-31T01:31:21 IST" name="Restaurant Reservation Automation TestSuite" finished-at="2024-03-31T01:31:30 IST" duration-ms="9539">
     <groups>
       <group name="Staff Account">
-        <method signature="TC_015_Reservation_Details.addNewReservation(java.lang.String)[pri:3, instance:testCases.TC_015_Reservation_Details@73700b80]" name="addNewReservation" class="testCases.TC_015_Reservation_Details"/>
-        <method signature="TC_015_Reservation_Details.searchReservation(java.lang.String)[pri:1, instance:testCases.TC_015_Reservation_Details@73700b80]" name="searchReservation" class="testCases.TC_015_Reservation_Details"/>
-        <method signature="TC_015_Reservation_Details.showAllReservation(java.lang.String)[pri:2, instance:testCases.TC_015_Reservation_Details@73700b80]" name="showAllReservation" class="testCases.TC_015_Reservation_Details"/>
+        <method signature="TC_015_Reservation_Details.addNewReservation(java.lang.String)[pri:3, instance:testCases.TC_015_Reservation_Details@6a28ffa4]" name="addNewReservation" class="testCases.TC_015_Reservation_Details"/>
+        <method signature="TC_015_Reservation_Details.searchReservation(java.lang.String)[pri:1, instance:testCases.TC_015_Reservation_Details@6a28ffa4]" name="searchReservation" class="testCases.TC_015_Reservation_Details"/>
+        <method signature="TC_015_Reservation_Details.showAllReservation(java.lang.String)[pri:2, instance:testCases.TC_015_Reservation_Details@6a28ffa4]" name="showAllReservation" class="testCases.TC_015_Reservation_Details"/>
       </group> <!-- Staff Account -->
     </groups>
-    <test started-at="2024-03-30T01:20:10 IST" name="Restaurant Reservation Automation Test" finished-at="2024-03-30T01:20:46 IST" duration-ms="36184">
+    <test started-at="2024-03-31T01:31:21 IST" name="Restaurant Reservation Automation Test" finished-at="2024-03-31T01:31:30 IST" duration-ms="9539">
       <class name="testCases.TC_015_Reservation_Details">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.TC_015_Reservation_Details@73700b80]" started-at="2024-03-30T01:20:10 IST" name="setUp" finished-at="2024-03-30T01:20:13 IST" duration-ms="3060" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.TC_015_Reservation_Details@6a28ffa4]" started-at="2024-03-31T01:31:21 IST" name="setUp" finished-at="2024-03-31T01:31:25 IST" duration-ms="4362" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="searchReservation(java.lang.String)[pri:1, instance:testCases.TC_015_Reservation_Details@73700b80]" started-at="2024-03-30T01:20:13 IST" name="searchReservation" description="Reservation page view successfully" finished-at="2024-03-30T01:20:21 IST" duration-ms="8735" status="PASS">
+        <test-method signature="searchReservation(java.lang.String)[pri:1, instance:testCases.TC_015_Reservation_Details@6a28ffa4]" started-at="2024-03-31T01:31:25 IST" name="searchReservation" description="Reservation page view successfully" finished-at="2024-03-31T01:31:29 IST" duration-ms="3953" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -24,10 +24,80 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=123.0.2420.53)
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [16feab81a926e6495e05d81a7e7fc63c, findElement {using=xpath, value=//input[@id='account_id']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.53, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:10499}, msedge: {msedgedriverVersion: 123.0.2420.53 (357a32c89da2..., userDataDir: C:\Users\MITHU\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:10499/devtoo..., se:cdpVersion: 123.0.2420.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 16feab81a926e6495e05d81a7e7fc63c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=123.0.2420.53)
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [16feab81a926e6495e05d81a7e7fc63c, findElement {using=xpath, value=//input[@id='account_id']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.53, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:10499}, msedge: {msedgedriverVersion: 123.0.2420.53 (357a32c89da2..., userDataDir: C:\Users\MITHU\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:10499/devtoo..., se:cdpVersion: 123.0.2420.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 16feab81a926e6495e05d81a7e7fc63c
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy14.sendKeys(Unknown Source)
+at pageObject.StaffLoginPage.staffLogin(StaffLoginPage.java:29)
+at testCases.TC_015_Reservation_Details.searchReservation(TC_015_Reservation_Details.java:18)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchReservation -->
-        <test-method signature="showAllReservation(java.lang.String)[pri:2, instance:testCases.TC_015_Reservation_Details@73700b80]" started-at="2024-03-30T01:20:21 IST" name="showAllReservation" description="All Reservations view successfully" finished-at="2024-03-30T01:20:28 IST" duration-ms="6810" status="PASS">
+        <test-method signature="showAllReservation(java.lang.String)[pri:2, instance:testCases.TC_015_Reservation_Details@6a28ffa4]" started-at="2024-03-31T01:31:29 IST" name="showAllReservation" description="All Reservations view successfully" finished-at="2024-03-31T01:31:29 IST" duration-ms="10" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -35,10 +105,81 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=123.0.2420.53)
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [16feab81a926e6495e05d81a7e7fc63c, findElement {using=xpath, value=//a[normalize-space()='Reservations']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.53, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:10499}, msedge: {msedgedriverVersion: 123.0.2420.53 (357a32c89da2..., userDataDir: C:\Users\MITHU\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:10499/devtoo..., se:cdpVersion: 123.0.2420.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 16feab81a926e6495e05d81a7e7fc63c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=123.0.2420.53)
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [16feab81a926e6495e05d81a7e7fc63c, findElement {using=xpath, value=//a[normalize-space()='Reservations']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.53, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:10499}, msedge: {msedgedriverVersion: 123.0.2420.53 (357a32c89da2..., userDataDir: C:\Users\MITHU\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:10499/devtoo..., se:cdpVersion: 123.0.2420.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 16feab81a926e6495e05d81a7e7fc63c
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+at pageObject.ReservationDetails.searchReservation(ReservationDetails.java:65)
+at pageObject.ReservationDetails.showAllReservation(ReservationDetails.java:74)
+at testCases.TC_015_Reservation_Details.showAllReservation(TC_015_Reservation_Details.java:25)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- showAllReservation -->
-        <test-method signature="addNewReservation(java.lang.String)[pri:3, instance:testCases.TC_015_Reservation_Details@73700b80]" started-at="2024-03-30T01:20:28 IST" name="addNewReservation" description="Add new Reservations" finished-at="2024-03-30T01:20:44 IST" duration-ms="16122" status="PASS">
+        <test-method signature="addNewReservation(java.lang.String)[pri:3, instance:testCases.TC_015_Reservation_Details@6a28ffa4]" started-at="2024-03-31T01:31:29 IST" name="addNewReservation" description="Add new Reservations" finished-at="2024-03-31T01:31:29 IST" duration-ms="20" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -46,10 +187,74 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=123.0.2420.53)
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [16feab81a926e6495e05d81a7e7fc63c, get {url=http://localhost/MiniProject/adminSide/StaffLogin/login.php}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.53, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:10499}, msedge: {msedgedriverVersion: 123.0.2420.53 (357a32c89da2..., userDataDir: C:\Users\MITHU\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:10499/devtoo..., se:cdpVersion: 123.0.2420.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 16feab81a926e6495e05d81a7e7fc63c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=123.0.2420.53)
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [16feab81a926e6495e05d81a7e7fc63c, get {url=http://localhost/MiniProject/adminSide/StaffLogin/login.php}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.53, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:10499}, msedge: {msedgedriverVersion: 123.0.2420.53 (357a32c89da2..., userDataDir: C:\Users\MITHU\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:10499/devtoo..., se:cdpVersion: 123.0.2420.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 16feab81a926e6495e05d81a7e7fc63c
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+at pageObject.StaffLoginPage.staffLogin(StaffLoginPage.java:26)
+at testCases.TC_015_Reservation_Details.addNewReservation(TC_015_Reservation_Details.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewReservation -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testCases.TC_015_Reservation_Details@73700b80]" started-at="2024-03-30T01:20:44 IST" name="closeDriver" finished-at="2024-03-30T01:20:46 IST" duration-ms="1382" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testCases.TC_015_Reservation_Details@6a28ffa4]" started-at="2024-03-31T01:31:29 IST" name="closeDriver" finished-at="2024-03-31T01:31:30 IST" duration-ms="1132" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->

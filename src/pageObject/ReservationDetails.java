@@ -103,7 +103,7 @@ public class ReservationDetails {
 		act.sendKeys(Keys.ARROW_DOWN);
 		act.sendKeys(Keys.ARROW_DOWN).perform();
 	
-		makeReservation.click();
+	makeReservation.click();
 		Thread.sleep(2000);
 		
 	}
